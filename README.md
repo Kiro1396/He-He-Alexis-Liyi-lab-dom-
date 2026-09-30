@@ -8,8 +8,8 @@
 * **Profesora:** Dra. Elba Valderrama Bahamóndez
 
 ## Enlaces de Entrega
-* **Repositorio de GitHub:** [Pegar enlace del código aquí]
-* **Sitio Web Publicado (GitHub Pages):** [Pegar enlace de la página aquí]
+* **Repositorio de GitHub:** [https://github.com/Kiro1396/He-He-Alexis-Liyi-lab-dom-]
+* **Sitio Web Publicado (GitHub Pages):** [https://kiro1396.github.io/He-He-Alexis-Liyi-lab-dom-/inscripcion/]
 
 ## Captura
 ### Captura de validaciones
