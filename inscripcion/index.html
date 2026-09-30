@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Cursos - FISC UTP</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Formulario de Inscripción - FISC UTP</h2>
+        <form id="inscripcion" novalidate>
+            
+            <!-- Nombre Completo -->
+            <div class="campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Alexis He" aria-describedby="nombre-error">
+                <p id="nombre-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Cédula -->
+            <div class="campo">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Ej: 8-123-4567" aria-describedby="cedula-error">
+                <p id="cedula-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Correo -->
+            <div class="campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ej:alexishe2006@gmail.com" aria-describedby="correo-error">
+                <p id="correo-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Celular -->
+            <div class="campo">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="Ej: 6123-4567/61234567" aria-describedby="celular-error">
+                <p id="celular-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Fecha de Nacimiento -->
+            <div class="campo">
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" aria-describedby="fechaNacimiento-error">
+                <p id="fechaNacimiento-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Curso -->
+            <div class="campo">
+                <label for="curso">Curso a inscribirse:</label>
+                <select id="curso" name="curso" aria-describedby="curso-error">
+                    <option value="">Selecciona un curso</option>
+                    <option value="Ingeniería Web">Ingeniería Web</option>
+                    <option value="Desarrollo de Software">Lenguajes Formales</option>
+                    <option value="Base de Datos">Redes Computacionales</option>
+                    <option value="Sistemas Operativos">Sistemas Operativos</option>
+                </select>
+                <p id="curso-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Modalidad -->
+            <fieldset>
+                <legend>Modalidad</legend>
+                <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+                <label><input type="radio" name="modalidad" value="virtual"> Virtual</label>
+                <p id="modalidad-error" class="error" aria-live="polite"></p>
+            </fieldset>
+
+            <!-- Sede (Oculto por defecto) -->
+            <div class="campo" id="campo-sede" hidden>
+                <label for="sede">Sede:</label>
+                <select id="sede" name="sede" aria-describedby="sede-error">
+                    <option value="">Selecciona una sede</option>
+                    <option value="Bocas del Toro">Bocas del Toro</option>
+                    <option value="Chiriquí">Chiriquí</option>
+                    <option value="Veraguas">Veraguas</option>
+                    <option value="Azuero">Azuero</option>
+                    <option value="Coclé">Coclé</option>
+                    <option value="Colón">Colón</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Panamá Oeste">Panamá Oeste</option>
+                </select>
+                <p id="sede-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" aria-describedby="contrasena-error">
+                <div id="fuerza-bar" class="fuerza-barra"><span></span></div>
+                <p id="contrasena-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Confirmar Contraseña -->
+            <div class="campo">
+                <label for="confirmarContrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmarContrasena" name="confirmarContrasena" aria-describedby="confirmarContrasena-error">
+                <p id="confirmarContrasena-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <!-- Comentarios -->
+            <div class="campo">
+                <label for="comentarios">Comentarios (Opcional):</label>
+                <textarea id="comentarios" name="comentarios" maxlength="200" placeholder="Escribe aquí..."></textarea>
+                <div id="contador-comentarios" class="contador">0 / 200</div>
+            </div>
+
+            <!-- Términos y Condiciones -->
+            <div class="campo-checkbox">
+                <label>
+                    <input type="checkbox" id="terminos" name="terminos" aria-describedby="terminos-error">
+                    Acepto los términos y condiciones
+                </label>
+                <p id="terminos-error" class="error" aria-live="polite"></p>
+            </div>
+
+            <button type="submit">Inscribirme</button>
+        </form>
+
+        <!-- Tarjeta de Confirmación -->
+        <section id="confirmacion" aria-live="polite"></section>
+    </div>
+
+    <script src="validacion.js" defer></script>
+</body>
+</html>
