@@ -1,15 +1,15 @@
 # Laboratorio Guiado: DOM y Validación de Formularios
 
 ## Integrantes del Grupo
-* **Estudiante 1:** [Alexis He]
-* **Estudiante 2:** [Liyi He]
-* **Grupo:** [1SF133]
+* **Estudiante 1:** Alexis He
+* **Estudiante 2:** Liyi He
+* **Grupo:** 1SF133
 * **Asignatura:** Ingeniería Web
 * **Profesora:** Dra. Elba Valderrama Bahamóndez
 
 ## Enlaces de Entrega
-* **Repositorio de GitHub:** [https://github.com/Kiro1396/He-He-Alexis-Liyi-lab-dom-]
-* **Sitio Web Publicado (GitHub Pages):** [https://kiro1396.github.io/He-He-Alexis-Liyi-lab-dom-/inscripcion/]
+* **Repositorio de GitHub:** https://github.com/Kiro1396/He-He-Alexis-Liyi-lab-dom-
+* **Sitio Web Publicado (GitHub Pages):** https://kiro1396.github.io/He-He-Alexis-Liyi-lab-dom-/inscripcion/
 
 ## Captura
 ### Captura de validaciones
