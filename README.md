@@ -29,4 +29,4 @@
 -Sin delegación: Tendrías que registrar 100 manejadores individuales. Olvidar quitarlos al eliminar elementos suele causar fugas de memoria en la página.
 
 ### 3. ¿Por qué el manejador de `blur` se registra con `true` como tercer argumento?
-**R=** Porque el evento blur no burbujea (no sube de forma natural por el árbol de HTML). Al colocar true, le indicas a JavaScript que escuche el evento en la fase de captura, permitiendo que un único escuchador en la etiqueta <form> atrape la salida de cualquier casilla del formulario de forma centralizada.
+**R=** Porque el evento blur no burbujea (no sube de forma natural por el árbol de HTML). Al colocar true, le indicas a JavaScript que escuche el evento en la fase de captura, permitiendo que un único escuchador en la etiqueta "<form>" atrape la salida de cualquier casilla del formulario de forma centralizada.
